@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  position: relative;
+}
+
+header {
+  margin: 2rem 50rem;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+.row {
+  position: relative;
+  display: flex;
+}
+.col {
+  padding: 3rem 1rem;
+  margin-left: 1rem;
+  border: 1px solid black;
+  background-color: grey;
+  display: grid;
+  font-size: 0.8rem;
+  /* float: left; */
+  width: 33.33%;
+}
+.topic {
+  border: 1px solid black;
+  background-color: pink;
+  width: 60%;
+  margin-left: 6.4rem;
+  margin-top: -3rem;
+  padding: 1rem 1rem;
+}
+.topic-yellow {
+  border: 2px solid black;
+  background-color: yellow;
+  width: 60%;
+  margin-left: 6.4rem;
+  margin-top: -3rem;
+  padding: 1rem 1rem;
+}
+.topic-wine {
+  border: 1px solid transparent;
+  background-color: red;
+  width: 60%;
+  margin-left: 6.4rem;
+  margin-top: -3rem;
+  padding: 1rem 1rem;
+}
+
+@media (min-width: 991px) {
+  header {
+    margin: 2rem 30rem;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+  .left > .right {
+    width: 50%;
+  }
+  .middle {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    margin: 2rem 15rem;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+  .row {
+    display: block;
+  }
+  .left,
+  .middle {
+    width: 50%;
+    float: left;
+    margin-bottom: 1rem;
+  }
+  .right {
+    width: 100%;
+    float: right;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    margin: 2rem 8rem;
+  }
+  .row {
+    display: block;
+  }
+  .left,
+  .right,
+  .middle {
+    margin-bottom: 1rem;
+    margin-left: 7rem;
+    width: 50%;
+  }
+}
