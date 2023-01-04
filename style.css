@@ -32,24 +32,24 @@ header {
 .topic {
   border: 1px solid black;
   background-color: pink;
-  width: 60%;
-  margin-left: 6.4rem;
+  width: 25%;
+  margin-left: 21.5rem;
   margin-top: -3rem;
   padding: 1rem 1rem;
 }
 .topic-yellow {
   border: 2px solid black;
   background-color: yellow;
-  width: 60%;
-  margin-left: 6.4rem;
+  width: 30%;
+  margin-left: 20.5rem;
   margin-top: -3rem;
   padding: 1rem 1rem;
 }
 .topic-wine {
   border: 1px solid transparent;
   background-color: red;
-  width: 60%;
-  margin-left: 6.4rem;
+  width: 30%;
+  margin-left: 30rem;
   margin-top: -3rem;
   padding: 1rem 1rem;
 }
@@ -64,7 +64,7 @@ header {
     width: 50%;
   }
   .middle {
-    width: 80%;
+    width: 50%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -86,6 +86,17 @@ header {
     width: 100%;
     float: right;
   }
+
+  .topic,
+  .topic-wine,
+  .topic-yellow {
+    margin-left: 14rem;
+    width: 25%;
+    position: absolute;
+  }
+  .topic-yellow {
+    margin-left: 45rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -94,12 +105,22 @@ header {
   }
   .row {
     display: block;
+    text-align: justify;
+    position: relative;
   }
   .left,
   .right,
   .middle {
     margin-bottom: 1rem;
     margin-left: 7rem;
-    width: 50%;
+    width: 60%;
+  }
+
+  .topic,
+  .topic-wine,
+  .topic-yellow {
+    margin-left: 10rem;
+    width: 25%;
+    position: absolute;
   }
 }
